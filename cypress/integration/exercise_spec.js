@@ -51,7 +51,7 @@ context('The QA Engineer app', () => {
   });
 
   it('Should show a total of 10 quotes and scores', () => {
-    cy.get('ul li span:nth-of-type(1)').should('have.length', '10') // each list items contains 2 spans, the first onebeing the actual quote
+    cy.get('ul li span:nth-of-type(1)').should('have.length', '10') // each list items contains 2 spans, the first one being the actual quote
     cy.get('ul li span:nth-of-type(1)').each((element, index) => {
       cy.get('ul li span:nth-of-type(1)').eq(index).should('be.visible') // quotes should be visible
       cy.get('ul li span:nth-of-type(2)').eq(index).should('be.visible').and('have.class', 'score') // the second span is the score and should also be visible
