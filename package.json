@@ -1,0 +1,19 @@
+{
+  "name": "qa-exercise",
+  "version": "1.0.0",
+  "description": "Short exercise to practise test automation.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:cli": "./node_modules/.bin/cypress run"
+  },
+  "keywords": [
+    "testing",
+    "automation"
+  ],
+  "author": "Alexandre Castro",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.1.4"
+  }
+}
